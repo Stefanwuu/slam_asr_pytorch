@@ -24,7 +24,7 @@ class SLAM_ASR(nn.Module):
         downsample_K=5,
         hidden_dim=2048,
         train_mode="adapter",
-        device="cuda",
+        device="mps",
     ):
         assert train_mode in ["adapter", "full"]
         super(SLAM_ASR, self).__init__()
